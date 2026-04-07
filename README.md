@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Web Application
 
-## Getting Started
+This project demonstrates real-world concepts like product listings, state management, and backend integration.
 
-First, run the development server:
+---
+
+## Features
+
+* Product listing and browsing
+* Search and filter functionality *(if implemented)*
+* Add to cart functionality
+* Checkout flow *(if added later)*
+* Authentication system *(if implemented)*
+* State management using Zustand
+* Backend powered by Supabase
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* Next.js
+* React.js
+* Tailwind CSS *(if used)*
+
+### Backend
+
+* Supabase (Database + Auth)
+
+### State Management
+
+* Zustand
+
+---
+
+## Project Structure
+
+```
+ecom-project/
+│── components/      # Reusable UI components
+│── pages/           # Next.js pages
+│── public/          # Static assets
+│── styles/          # CSS files
+│── utils/           # Helper functions
+│── store/           # Zustand store
+│── supabase/        # Backend configuration
+```
+
+---
+
+## Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/kishup494/ecom-project.git
+cd ecom-project
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file and add:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+*(Add screenshots later)*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Learning Outcome
+
+This project helped me learn:
+
+* Building a full-stack app using Next.js
+* Managing global state with Zustand
+* Integrating Supabase for backend services
+* Structuring scalable web applications
+
+---
+
+## Author
+
+* GitHub: https://github.com/kishup494
+
+---
+
+## Future Improvements
+
+* Payment gateway integration
+* Order history
+* Admin dashboard
+* Product reviews & ratings
+
+---
+
+## Acknowledgement
+
+This project is based on a tutorial from YouTube:
+👉 https://youtu.be/WTw6NZDZ5mQ
